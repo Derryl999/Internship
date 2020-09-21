@@ -1,6 +1,7 @@
 import React from 'react';
 // import {Navbar,NavbarBrand} from 'reactstrap'
 import './App.css';
+import MenuComponent from './components/MenuComponent';
 import Navbar from './components/navbar/Navbar';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
        <NavbarBrand href="/">Resort</NavbarBrand>
      </div>
    </Navbar> */}
+   <MenuComponent/>
     </div>
   );
 }
