@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import {Navbar,NavbarBrand} from 'reactstrap'
 import './App.css';
 import MenuComponent from './components/MenuComponent';
 import Navbar from './components/navbar/Navbar';
-
-function App() {
+import { DISHES } from "./shared/dishes";
+class App extends Component {
+  state={
+    dishes:DISHES
+  }
+  render(){
   return (
     <div className="App">
       <Navbar/>
@@ -13,9 +17,10 @@ function App() {
        <NavbarBrand href="/">Resort</NavbarBrand>
      </div>
    </Navbar> */}
-   <MenuComponent/>
+   <MenuComponent dishes={this.state.dishes} />
     </div>
   );
+  }
 }
 
 export default App;
