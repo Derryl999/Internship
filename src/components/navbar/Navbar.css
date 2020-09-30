@@ -30,7 +30,7 @@
   margin-right: 2rem;
 }
 
-.nav-links {
+a.nav-links {
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -53,6 +53,9 @@
 
 .menu-icon {
   display: none;
+}
+a:hover{
+  text-decoration: none;
 }
 
 @media screen and (max-width: 960px) {
