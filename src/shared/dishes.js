@@ -1,6 +1,6 @@
 export const DISHES = [
   {
-    id: 0,
+    id: 1,
     name: "Uthappizza",
     image: "assets/images/destination_1.jpg",
     category: "mains",
@@ -48,7 +48,7 @@ export const DISHES = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     name: "Zucchipakoda",
     image: "assets/images/destination_6.jpg",
     category: "appetizer",
@@ -96,7 +96,7 @@ export const DISHES = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Vadonut",
     image: "assets/images/destination_3.jpg",
     category: "appetizer",
@@ -144,7 +144,7 @@ export const DISHES = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "ElaiCheese Cake",
     image: "assets/images/destination_4.jpg",
     category: "dessert",
