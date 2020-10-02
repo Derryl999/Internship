@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import Navbar from "./navbar/Navbar";
+// import Navbar from "./layout/navbar/Navbar";
 import MenuComponent from "./MenuComponent";
+
 import { DISHES } from "../shared/dishes";
 import DishDetailComponent from "./DishDetailComponent";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 
 class Main extends Component {
   state = {
@@ -26,7 +29,8 @@ class Main extends Component {
     // console.log(this.state.selectedDish)
     return (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
+        <Header/>
         <MenuComponent
           dishes={this.state.dishes}
           handleClick={(dishId) => this.handleClick(dishId)}
@@ -38,6 +42,7 @@ class Main extends Component {
           )[0]}:{dish:null})}
         />
         </div>
+        <Footer/>
       </div>
     );
   }
