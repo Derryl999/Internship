@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavbarBrand, Jumbotron } from 'reactstrap';
-import Navbar from './navbar/Navbar'
+import NavbarComponent from './navbar/Navbar'
 class Header extends Component {
   render() {
     return(
@@ -10,7 +10,7 @@ class Header extends Component {
             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
         </div>
       </Navbar> */}
-      <Navbar/>
+      <NavbarComponent/>
       <Jumbotron>
            <div className="container">
                <div className="row row-header">
