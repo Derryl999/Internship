@@ -1,28 +1,33 @@
 export const MenuItems = [
     {
-        title: 'Home',
-        url: '#',
-        cName: 'nav-links'
+        title: ' Home',
+        url: '/home',
+        cName: 'nav-links',
+        logo:'fa fa-home fa-lg'
+       
     },
     {
-        title: 'Services',
-        url: '#',
-        cName: 'nav-links'
+        title: ' Menu',
+        url: '/menu',
+        cName: 'nav-links',
+        logo:'fa fa-list fa-lg'
     },
     {
-        title: 'Products',
-        url: '#',
-        cName: 'nav-links'
+        title: ' About Us',
+        url: '/sboutus',
+        cName: 'nav-links',
+        logo:'fa fa-info fa-lg'
     },
     {
-        title: 'Contact Us',
-        url: '#',
-        cName: 'nav-links'
+        title: ' Contact Us',
+        url: '/contactus',
+        cName: 'nav-links',
+        logo:'fa fa-address-card fa-lg'
     },
-    {
-        title: 'Sign up',
-        url: '#',
-        cName: 'nav-links-mobile'
-    }
+    // {
+    //     title: 'Sign up',
+    //     url: '/menu',
+    //     cName: 'nav-links-mobile',
+    // }
 
 ]
