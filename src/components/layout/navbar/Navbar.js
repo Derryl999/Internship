@@ -120,7 +120,7 @@ class NavbarComponent extends Component {
 
                 {MenuItems.map((item, index) => {
                   return (
-                    <NavItem>
+                    <NavItem key={index}>
                       <NavLink className="nav-link" to={item.url}>
                         <span className={item.logo}></span>
                         {item.title}
