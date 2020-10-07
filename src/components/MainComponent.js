@@ -33,7 +33,19 @@ class Main extends Component {
     console.log("main component componentDidUpdate");
   }
 
+  
+
   render() {
+    const HomePage=()=>{
+      return (
+        <Home 
+        dish={this.state.dishes.filter((dish)=>dish.featured)[0]}
+        promotion={this.state.promotions.filter((promo)=>promo.featured)[0]}
+        leader={this.state.leaders.filter((leader)=>leader.featured)[0]}
+        
+        />
+      )
+    }
     console.log("main component render");
     // console.log(this.state.selectedDish)
     return (
@@ -52,7 +64,7 @@ class Main extends Component {
         />
         </div> */}
         <Switch>
-          <Route path="/home" component={Home} />
+          <Route path="/home" component={HomePage} />
           <Route
             exact
             path="/menu"

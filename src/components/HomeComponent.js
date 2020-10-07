@@ -1,11 +1,84 @@
-import React from 'react'
+ /*import React from "react";
+import {
+  Media,
+  Card,
+  CardBody,
+  CardImg,
+  CardImgOverlay,
+  CardText,
+  CardTitle,
+  CardSubtitle,
+} from "reactstrap";
 
-function Home(){
-    return(
-        <div>
-            <h2>Home</h2>
-        </div>
-    )
+function RenderCard({ item }) {
+  return (
+    <Card>
+      <CardImg width="100%" src={item.image} alt={item.name} />
+      <CardBody>
+        <CardTitle>{item.name}</CardTitle>
+        {item.designation?<CardSubtitle>{item.designation}</CardSubtitle>:null}
+        <CardText>{item.description}</CardText>
+      </CardBody>
+    </Card>
+  );
 }
-export default Home
 
+function Home(props) {
+    console.log('promo',props.promotion);
+  return (
+    <div className="container">
+      <div className="row align-items-start">
+        <div className="col-12 col-md m-1">
+          <RenderCard item={props.dish} />
+        </div>
+        <div className="col-12 col-md m-1">
+          <RenderCard item={props.promotion} />
+        </div>
+        <div className="col-12 col-md m-1">
+          <RenderCard item={props.leader} />
+        </div>
+      </div>
+    </div>
+  );
+}
+export default Home; */
+
+
+import React from 'react';
+import { Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle} from 'reactstrap';
+
+function RenderCard({item}) {
+    console.log(item);
+    return(
+        <Card>
+            <CardImg src={item.image} alt={item.name} />
+            <CardBody>
+            <CardTitle>{item.name}</CardTitle>
+            {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
+            <CardText>{item.description}</CardText>
+            </CardBody>
+        </Card>
+    );
+
+}
+
+function Home(props) {
+    return(
+        <div className="container">
+            <div className="row align-items-start">
+                <div className="col-12 col-md m-1">
+                    <RenderCard item={props.promotion} />
+                </div>
+                <div className="col-12 col-md m-1">
+                    <RenderCard item={props.dish} />
+                </div>
+                <div className="col-12 col-md m-1">
+                    <RenderCard item={props.leader} />
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Home;
