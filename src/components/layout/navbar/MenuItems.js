@@ -14,7 +14,7 @@ export const MenuItems = [
     },
     {
         title: ' About Us',
-        url: '/sboutus',
+        url: '/about',
         cName: 'nav-links',
         logo:'fa fa-info fa-lg'
     },
